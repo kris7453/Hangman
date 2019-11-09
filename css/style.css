@@ -1,0 +1,186 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #3f3f3f;
+}
+
+#wrapper
+{
+    min-height: 200px;
+}
+
+header
+{
+    background-color: #000000;
+    text-overflow: hidden;
+}
+
+header a
+{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+header a span.fa,
+header a p
+{
+    display: inline;
+    line-height: 1;
+    vertical-align: middle;
+}
+    
+header a span.fa
+{
+    padding-right: 4px;
+}
+
+header.visible-xs
+{
+    padding: 0;
+}
+
+header.visible-xs button
+{
+    width: 100%;
+}
+
+header.visible-xs ul
+{
+    width: 100%;
+    text-align: center;
+}
+
+#content
+{
+    margin-top: 4px;
+}
+
+#content .letters
+{
+    background-color: #000000;
+    font-size: 2.0vw;
+    color: rgb(80, 80, 80);
+    letter-spacing: 10px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+@media (min-width: 481px) and (max-width: 835px)
+{
+    #content .letters
+    {
+        font-size: 3.0vw;
+    }
+}
+
+@media (max-width: 480px)
+{
+    #content .letters
+    {
+        font-size: 4.0vw;
+    }
+}
+
+#content .letters > *:hover
+{
+    color: rgb(160, 160, 160);
+    cursor: pointer;
+}
+
+#content .letters .used
+{
+    color: #FFFFFF;
+    cursor: default;
+}
+
+#content .password
+{
+    font-size: 40px;
+    color: #FFF;
+    letter-spacing: 10px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#canvas
+{
+    background-image: url('../images/background.png');
+    background-size: 100% 100%;
+    box-shadow: inset 0px 0px 10px 12px #3f3f3f;
+}
+
+@media (max-width: 499px)
+{
+    header a span.fa,
+    header a p
+    {
+        font-size: 4vw;        
+    }
+}
+
+@media (min-width: 500px)
+{
+    header a span.fa,
+    header a p
+    {
+        font-size: 2.5vw;
+    }
+}
+
+/************************************************************/
+
+#content table
+{
+    margin-top: 10px;
+}
+
+#content table thead tr
+{
+    background-color: #000000;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#content table tbody tr
+{
+    background-color: #FFFFFF;
+    font-size: 16px;
+}
+
+#content table tbody tr:nth-of-type(2n)
+{
+    background-color: rgb(128, 119, 119);
+}
+
+#content #scoreBoard tbody tr td:nth-of-type(2n+1)
+{
+    text-align: center;
+}
+
+#content #passwords tbody tr td:not(:first-of-type)
+{
+    text-align: center;
+}
+
+#content #passwords tbody tr td:first-of-type
+{
+    padding-left: 4px;
+}
+
+#content #passwords tbody tr td span.fa-edit:hover
+{
+    color: #0000FF;
+}
+
+#content #passwords tbody tr td span.fa-remove:hover
+{
+    color: #FF0000;
+}

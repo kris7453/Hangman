@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisielec</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+    <div id="wrapper" class="container-fluid">
+        <header class="btn-group-justified btn-group-sm hidden-xs">
+            <a class="btn btn-success"><span class="fa fa-refresh"></span><p>Restart</p></a>
+            <a href="#game" class="btn btn-success"><span class="fa fa-gamepad"></span><p>Gra</p></a>
+            <a href="#scoreboard" class="btn btn-success"><span class="fa fa-list"></span><p>Tabela wyników</p></a>
+            <a href="#editor" class="btn btn-success"><span class="fa fa-edit"></span><p>Edytor haseł</p></a>
+        </header>
+        <header class="dropdown btn-group-sm visible-xs col-sm-12">
+            <button class="btn btn-success dropdown-toggle col-sm-12" data-toggle="dropdown">Menu<span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a><span class="fa fa-refresh"></span><p>Restart</p></a></li>
+                <li><a href="#game"><span class="fa fa-gamepad"></span><p>Gra</p></a></li>
+                <li><a href="#scoreboard"><span class="fa fa-list"></span><p>Tabela wyników</p></a></li>
+                <li><a href="#editor"><span class="fa fa-edit"></span><p>Edytor haseł</p></a></li>
+            </ul>
+        </header>
+
+        <div id="content" class="col-lg-12 center-block">
+        </div>
+    </div>
+
+    <div id="gibbet">
+        <img src="images/gibbet/0.png" class="0" style="display: none" />
+        <img src="images/gibbet/1.png" class="1" style="display: none" />
+        <img src="images/gibbet/2.png" class="2" style="display: none" />
+        <img src="images/gibbet/3.png" class="3" style="display: none" />
+        <img src="images/gibbet/4.png" class="4" style="display: none" />
+        <img src="images/gibbet/5.png" class="5" style="display: none" />
+        <img src="images/gibbet/6.png" class="6" style="display: none" />
+        <img src="images/gibbet/7.png" class="7" style="display: none" />
+        <img src="images/gibbet/8.png" class="8" style="display: none" />
+        <img src="images/gibbet/9.png" class="9" style="display: none" />
+        <img src="images/cloud0.png" class="cloud0" style="display: none" />
+        <img src="images/cloud1.png" class="cloud1" style="display: none" />
+        <img src="images/background.png" class="back" style="display: none" />
+    </div>
+
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/game/visual.js"></script>
+    <script src="js/game/password.js"></script>
+    <script src="js/game/game.js"></script>
+    <script src="js/game/activities.js"></script>
+
+    <script src="js/passwordEdit.js"></script>
+    <script>
+        var Game = Game || {};
+        $( window ).on( "load", function( event )
+        {
+            event.preventDefault();
+        
+            checkLocation( location.hash );
+        });
+    </script>
+
+</body>
+</html>
